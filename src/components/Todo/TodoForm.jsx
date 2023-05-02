@@ -1,5 +1,6 @@
-import { useState, useContext } from "react";
-import { TodoContext } from "../../contexts/TodoContext";
+import { useState } from "react";
+
+import { useTodo } from "../../hooks/useTodo";
 import PropTypes from "prop-types";
 import styles from "./TodoForm.module.scss";
 
@@ -18,16 +19,12 @@ TodoForm.propTypes = {
   }),
 };
 
-export function TodoForm({
-  textConfirm,
-  onSetShow,
-
-  oldTodo,
-}) {
+export function TodoForm({ textConfirm, onSetShow, oldTodo }) {
   // Consumer : TodoContext
-  const sharedObj = useContext(TodoContext);
-  const addTodo = sharedObj.addTodo;
-  const editTodo = sharedObj.editTodo;
+  const { addTodo, editTodo } = useTodo();
+
+  // const addTodo = sharedObj.addTodo;
+  // const editTodo = sharedObj.editTodo;
   // State
   const [task, setTask] = useState(oldTodo?.task || "");
   const [error, setError] = useState(false);
