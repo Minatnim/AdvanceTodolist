@@ -3,7 +3,7 @@ import { Header } from "../components/Header";
 import { SideBar } from "../components/SideBar";
 import { TodoContent } from "../components/Todo/TodoContent";
 
-export default function TodoPage() {
+function TodoPage() {
   return (
     <div className="container">
       <Header />
@@ -12,3 +12,4 @@ export default function TodoPage() {
     </div>
   );
 }
+export default TodoPage;

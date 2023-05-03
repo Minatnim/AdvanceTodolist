@@ -1,7 +1,16 @@
 import React, { Component } from "react";
+import { MenuAppBar as AppBar } from "../components/Common/AppBar";
 
-export default class ProfilePage extends Component {
+class ProfilePage extends Component {
   render() {
-    return <div>ProfilePage</div>;
+    return (
+      <>
+        <AppBar />
+      </>
+    );
   }
 }
+
+export default ProfilePage;
+
+// <ProfilePage/> ==> เรียก method render ==> <div>ProfilePage</div>
