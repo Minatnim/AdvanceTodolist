@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import AuthPhoto from "../assets/auth.png";
+
 function LoginPage() {
   return (
     <div className="h-screen flex">
@@ -36,9 +38,11 @@ function LoginPage() {
             </p>
             <p className="text-2xl text-gray-600 ">
               Don't have an account ?{" "}
-              <span className="hover:text-[#db4c3f] cursor-pointer font-bold">
-                Go to sign up
-              </span>
+              <Link to="/signup">
+                <span className="hover:text-[#db4c3f] cursor-pointer font-bold">
+                  Go to sign up
+                </span>
+              </Link>
             </p>
           </div>
         </div>

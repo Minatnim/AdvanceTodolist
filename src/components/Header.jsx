@@ -4,6 +4,7 @@ import { FaHome, FaSearch } from "react-icons/fa";
 import { Avatar } from "@mui/material";
 import UserPhoto from "../assets/user.jpg";
 import { useTodo } from "../hooks/useTodo";
+import { Link } from "react-router-dom";
 
 // Function Component
 export function Header() {
@@ -40,11 +41,13 @@ export function Header() {
       </div>
       {/* Avatar */}
       <div>
-        <Avatar
-          src={UserPhoto}
-          alt="user-profile"
-          sx={{ width: 40, height: 40, cursor: "pointer" }}
-        />
+        <Link to="/profile">
+          <Avatar
+            src={UserPhoto}
+            alt="user-profile"
+            sx={{ width: 40, height: 40, cursor: "pointer" }}
+          />
+        </Link>
       </div>
     </header>
   );
