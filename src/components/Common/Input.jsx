@@ -11,6 +11,7 @@ export function Input(props) {
       type={props.type || "text"}
       error={props.error}
       color={props.color || "primary"}
+      size="small"
       {...props}
     />
   );
