@@ -40,9 +40,9 @@ function RegisterPage() {
           <div className="flex gap-4">
             <p className="text-2xl text-gray-600 ">
               Already have an account ?{" "}
-              <Link>
+              <Link to="/">
                 <span className="hover:text-[#db4c3f] cursor-pointer font-bold">
-                  Go to log in
+                  Go to log-in
                 </span>
               </Link>
             </p>

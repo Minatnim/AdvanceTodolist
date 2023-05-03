@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { publicRoutes } from "./publicRouters";
-import { privateRoutes } from "./privateRouters";
+import { publicRoutes } from "./publicRoutes";
+import { privateRoutes } from "./privateRoutes";
 
 function Routes({ isAuthenticate = false }) {
   let appRoutes = isAuthenticate ? privateRoutes : publicRoutes;

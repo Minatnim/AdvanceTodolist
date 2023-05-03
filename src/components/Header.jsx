@@ -24,7 +24,7 @@ export function Header() {
       </span>
 
       {/* App Name */}
-      <h1>Todoist-Pavit</h1>
+      <h1>Todoist-MINATNIM</h1>
 
       {/* Search bar */}
       <div className="header__search__container">
